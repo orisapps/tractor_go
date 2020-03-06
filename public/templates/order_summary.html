@@ -1,0 +1,81 @@
+<div class="row">
+    <button class="form-control input-lg btn-success back-button pull-left"
+            name="home_signup" ng-click="back('service-type')"><span class="lnr lnr-chevron-left"></span> Back
+    </button>
+
+    <div ng-hide="loaded"><span class="lnr lnr-sync pull-right">&nbsp;<span style="font-family: 'Rubik', sans-serif">Loading</span></span>
+    </div>
+
+    <div class="home_centralise">
+        <div class="text-center home_mgr_wrap"><span class="home_tagline">Order Summary</span><br>
+            <span class="review_warning">(Please review carefully)</span>
+        </div>
+        <div class="details_wrap">
+            <div class="form_container_main">
+                <div class="summa_text_rapp">
+                    <div class="mgr_segment_title text-center">
+                        <h4>
+                            Tractorization request:
+                        </h4>
+                    </div>
+                    <div class="mgr_segment_order_summary_content">
+                        <ul>
+                            <li ng-repeat="item in orderSummary.itemsForService">
+                                {{item.description}}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mgr_segment_title text-center">
+                        <h4>Farm Specification:</h4>
+                    </div>
+                    <div class="mgr_segment_order_summary_content">
+                        <ul>
+                            <li>{{ orderSummary.propertyType }}, {{data.numberOfRooms}} acres in size
+                                with {{orderSummary.propertyFeatures}}.
+                            </li>
+                            <li>{{orderSummary.location}}
+                            </li>
+                            <li>{{reverseGeocode.duration}}
+                            </li>
+                            <input type="hidden" name="summ05" value="{{ orderSummary.propertyType }}, {{data.numberOfRooms}} acres in size
+                                with {{orderSummary.propertyFeatures}}">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mgr_segment_title text-center"><h4>Grand Total:</h4>
+                    <span class="amount_due_main">NGN{{orderSummary.totalAmount}}</span>
+                    <br>
+                </div>
+
+                <div class="mgr_segment_title text-center">
+                    <h4>Notes:</h4>
+                    <textarea name="additional_info" class="form-control input-md additional_info" id="additional_info"
+                              maxlength="560"height="300px" cols="3" placeholder="Any other info you'd like us to know?"
+                              ng-model="data.notes"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_btns_wrap">
+            <div class="home_btns_bottom text-center">
+               <script src="https://js.paystack.co/v1/inline.js"></script>
+                <input class="form-control input-lg btn-success"
+
+                       name="home_signup" ng-click="checkout()"
+
+                       value="PROCEED TO PAYMENT >>"
+                       type="button"/>
+
+
+
+
+                <div class="copyright_home text-center">
+                    <span>&copy; 2019 TOG Services Limited</span><br>
+                    <a href="#">Privacy</a> | <a
+                        href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>

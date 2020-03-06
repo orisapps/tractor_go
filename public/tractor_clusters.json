@@ -1,0 +1,220 @@
+{
+  "suggestions": [
+    {
+      "label": "Abia",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "1"
+    },
+    {
+      "label": "Adamawa",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "2"
+    },
+    {
+      "label": "Akwa Ibom",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "3"
+    },
+    {
+      "label": "Anambra",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "4"
+    },
+    {
+      "label": "Bauchi",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "5"
+    },
+    {
+      "label": "Bayelsa",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "6"
+    },
+    {
+      "label": "Benue",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "7"
+    },
+    {
+      "label": "Borno",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "8"
+    },
+    {
+      "label": "Cross River",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "9"
+    },
+    {
+      "label": "Delta",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "10"
+    },
+    {
+      "label": "Ebonyi",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "11"
+    },
+    {
+      "label": "Enugu",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "12"
+    },
+    {
+      "label": "Edo",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "13"
+    },
+    {
+      "label": "Ekiti",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "14"
+    },
+    {
+      "label": "Gombe",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "15"
+    },
+    {
+      "label": "Imo",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "16"
+    },
+    {
+      "label": "Jigawa",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "17"
+    },
+    {
+      "label": "Kaduna",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "18"
+    },
+    {
+      "label": "Kano",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "19"
+    },
+    {
+      "label": "Katsina",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "20"
+    },
+    {
+      "label": "Kebbi",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "21"
+    },
+    {
+      "label": "Kogi",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "22"
+    },
+    {
+      "label": "Kwara",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "23"
+    },
+    {
+      "label": "Lagos",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "24"
+    },
+    {
+      "label": "Nasarawa",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "25"
+    },
+    {
+      "label": "Niger",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "26"
+    },
+    {
+      "label": "Ogun",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "27"
+    },
+    {
+      "label": "Ondo",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "28"
+    },
+    {
+      "label": "Osun",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "29"
+    },
+    {
+      "label": "Oyo",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "30"
+    },
+    {
+      "label": "Plateau",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "31"
+    },
+    {
+      "label": "Rivers",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "32"
+    },
+    {
+      "label": "Sokoto",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "33"
+    },
+    {
+      "label": "Taraba",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "34"
+    },
+    {
+      "label": "Yobe",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "35"
+    },
+    {
+      "label": "Zamfara",
+      "language": "ng",
+      "countryCode": "NGA",
+      "locationId": "36"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+
+<script>
+    var current = 1;
+
+    $('form#house_profile').on('change', '.service_item_no', function (e) {
+        $(e.target).next('.service_item').removeAttr('disabled');
+    });
+
+    $('.add_item_btn').click(function () {
+        $(this).css('opacity', '0.8');
+        var $el = (current == 0) ? $("#selector-wrap-1") : $("#selector-wrap-" + current);
+        current++;
+        $('<div id="selector-wrap-' + current + '" class="selector-wrap"><select class="form-control input-md service_item" name="service_item_' + current + '" id="service_item_' + current + '" required="required"><option value="Plumber" selected>Plumber</option> <option value="Carpenter">Carpenter</option> <option value="Gardener">Gardener</option> <option value="Nanny">Nanny</option> <option value="Driver">Driver</option> <option value="Cleaner">Cleaner</option> <option value="Fumigator">Fumigator</option> <option value="Electrician">Electrician</option></select><select class="form-control input-md service_item_no" name="service_item_no_' + current + '" id="service_item_no_' + current + '" required="required"> <option value="default" disabled>Qty</option> <option value="1" selected>1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option></select></div>').insertAfter($el);
+    });
+
+    $('.sub_item_btn').click(function () {
+        $('.selector-wrap').last().remove();
+        current -= 1;
+        if (current < 1) current = 1;
+    });
+
+    $('.reset_item_btn').click(function () {
+        $(this).closest('form').find("input[type=text], textarea, select").val("");
+    });
+
+
+</script>

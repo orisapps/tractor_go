@@ -1,0 +1,166 @@
+
+<div class="row">
+    <button class="form-control input-lg btn-success back-button pull-left"
+           name="home_signup" ng-click="back('')"><span class="lnr lnr-chevron-left"></span> Back </button>
+
+    <div ng-hide="loaded"><span class="lnr lnr-sync pull-right">&nbsp;<span style="font-family: 'Rubik', sans-serif">Loading</span></span></div>
+
+    <div class="home_centralise">
+        <div class="text-center home_mgr_wrap"><span class="home_tagline">Type of Farm</span>
+        </div>
+        <div class="details_wrap">
+            <div class="form_container_main">
+                <form name="house_profile" id="" action="/"
+                      enctype="multipart/form-data">
+                    <a class="service_designer_choice_box text-center"
+                       ng-class="{'service_designer_choice_box_selected_state': data.propertyType==='commercial'}"
+                       ng-click="data.propertyType='commercial'">
+                        <div>
+                            <img src="images/resources/office.png" width="80px" height="70px"/>
+                            <br>
+                            <span class="service_designer_box_text_label">Commercial</span>
+                        </div>
+                    </a>
+                    <a class="service_designer_choice_box text-center"
+                       ng-class="{'service_designer_choice_box_selected_state': data.propertyType==='subsistence'}"
+                       ng-click="data.propertyType='subsistence'">
+                        <div>
+                            <img src="images/resources/residential.png" width="70px" height="70px"/>
+                            <br>
+                            <span class="service_designer_box_text_label">Subsistence</span>
+                        </div>
+                    </a>
+
+                    <div class="view">
+                        <div ng-switch="data.propertyType">
+                            <div class="" ng-switch-when="commercial">
+                                <select ng-model="data.commercialType" name="type_of_house"
+                                        class="form-control input-md type_of_house minimal"
+                                        ng-class="{highlight:homeAppForm.type_of_house.$invalid && errors['service-type']}"
+                                        ng-required="true" style="margin-bottom: 15px;">
+                                    <option value="" label="Type of commercial farm..." selected disabled>Type of commercial farm...
+                                    </option>
+                                    <option value="Mixed crop and livestock">Mixed crop and livestock</option>
+                                    <option value="Dairy farm">Dairy farm</option>
+                                    <option value="Grain farm">Grain farm</option>
+                                    <option value="Livestock ranch">Livestock ranch</option>
+                                    <option value="Commercial garden">Commercial garden</option>
+                                    <option value="Fruit farm">Fruit farm</option>
+                                </select>
+                                <span class="error_invalid"
+                                      ng-show="homeAppForm.type_of_house.$invalid && errors['service-type']">
+                                Please select something here.
+                            </span>
+
+
+                            <br>
+                                <select name="stateId" class="form-control input-md type_of_house minimal" ng-change="getLga(stateId)" ng-model="stateId"  ng-options="name.name for (id, name) in states" required>
+                                    <option value="" label="Select State.." selected disabled>Select State..
+                                    </option>
+                                </select>
+
+
+                                <br>
+                                <select name="location" class="form-control input-md input-md type_of_house minimal" ng-model="lga" ng-options="name for name in lgas" ng-change="getSelectedLga(lga)" ng-value="" required>
+                                    <option value="" label="Select local government area..." selected disabled>Select State..
+                                    </option>
+                                </select>
+
+
+                                <div class="mgr_segment_title mgr_segment_title_no_float text-center" style="margin-top: 20px !important; margin-bottom: -10px !important;">
+                                    <h4>
+                                        Farm size (hectares): <span class="no_of_rooms">{{data.numberOfRooms}}</span>
+                                        <input type="hidden" name="numberofrooms" value="{{data.numberOfRooms}}">
+                                    </h4>
+                                </div>
+
+                                <input type="range" data-number-of-rooms="data.numberOfRooms" min="1" max="20" step="1"
+                                       range-slider="" />
+                            </div>
+                            <div class="" ng-switch-when="subsistence">
+
+
+
+                                <br>
+                                <select name="stateId" class="form-control input-md type_of_house minimal" ng-change="getLga(stateId)" ng-model="stateId"  ng-options="name.name for (id, name) in states" required>
+                                    <option value="" label="Select State..." selected disabled>Select State..
+                                    </option>
+                                </select>
+
+
+                                <br>
+                                <select name="location" class="form-control input-md input-md type_of_house minimal" ng-model="lga" ng-options="name for name in lgas" ng-change="getSelectedLga(lga)" ng-value="" required>
+                                    <option value="" label="Select local government area..." selected disabled>Select State..
+                                    </option>
+                                </select>
+
+                                <span class="error_invalid"
+                                      ng-show="homeAppForm.type_of_house.$invalid && errors['service-type']">
+                                Please select something here.
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mgr_segment_title mgr_second_offset text-center">
+                        <span class="home_tagline">Features of Farm</span>
+                        <p style="font-size: smaller">(Please select a few features)</p></div>
+                    <div class="service_designer_segment_main">
+                        <div class="designer_controls text-center">
+                            <div class="add_feature_btn manipulators" ng-click="addNewFeature()">
+                                ADD
+                            </div>
+                            <div class="sub_feature_btn manipulators" ng-click="removeFeature()">
+                                REMOVE
+                            </div>
+                            <div class="reset_feature_btn manipulators" ng-click="resetFeatures()">
+                                RESET
+                            </div>
+                        </div>
+
+                        <div id="property-features-error" class="error_panel">
+                            <div class="alert alert-danger alert-dismissable">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                Sorry, you can't add any more features!
+                            </div>
+                        </div>
+
+                        <div class="selector-wrap-default" ng-repeat="feature in data.propertyFeatures">
+                            <select ng-change="onPropertyFeatureChange(feature, '{{feature.name}}')"
+                                    ng-model="feature.name" name="service_item_1" id="service_item_1"
+                                    class="form-control input-md service_item minimal"
+                                    required="required"
+                                    ng-options="option for option in feature.availableFeatures">
+                            </select>
+                            <select ng-model="feature.quantity" name="service_item_no_1" id="service_item_no_1"
+                                    class="form-control input-md service_item_no minimal"
+                                    required="required">
+                                <option value="disabled" disabled>Qty</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="home_btns_wrap">
+            <div class="home_btns_bottom text-center">
+                <input class="form-control input-lg btn-success"
+                       name="home_signup" type="button"
+                       ng-click="next('service-type')"
+                       value="CONTINUE >>"/>
+            </div>
+
+            <div class="copyright_home text-center">
+                <span>&copy; 2019 TOG Services Limited</span><br>
+                <a href="#">Privacy</a> |
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</div>

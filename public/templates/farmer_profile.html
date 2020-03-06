@@ -1,0 +1,38 @@
+<div class="row">
+    <button class="form-control input-lg btn-success back-button pull-left"
+           name="home_signup" ng-click="back('')"><span class="lnr lnr-chevron-left"></span> Back </button>
+
+    <div ng-hide="loaded"><span class="lnr lnr-sync pull-right">&nbsp;<span style="font-family: 'Rubik', sans-serif">Loading</span></span></div>
+
+    <div class="home_centralise">
+        <div class="text-center home_mgr_wrap"><span class="home_tagline">USER PROFILE</span>
+        </div>
+        <div class="details_wrap">
+            <div class="container">
+                <form name="house_profile" id="" action="/"
+                      enctype="multipart/form-data">
+                      <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{Auth::user()->email}}</li>
+    <li class="list-group-item">First Name</li>
+    <li class="list-group-item">Last Name</li>
+    <li class="list-group-item">Farm Name</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Phone Number</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+  </div>
+                </form>
+            </div>
+        </div>
+
+            <div class="copyright_home text-center">
+                <span>&copy; 2019 TOG Services Limited</span><br>
+                <a href="#">Privacy</a> |
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+
+<div class="mgr_segment_title mgr_segment_title_no_float text-center">
+    <h4>
+        Number of Rooms: <span class="no_of_rooms"></span>
+    </h4>
+</div>
+<input type="range" min="1" max="20" step="1" value="3" data-rangeslider/>
+
+<script>
+    $('input[type="range"]').rangeslider({
+        polyfill: false,
+        onInit: function () {
+            this.output = $('span.no_of_rooms').html(this.$element.val());
+        },
+
+        onSlide: function (position, value) {
+            this.output.html(value);
+        }
+    });
+</script>

@@ -1,0 +1,153 @@
+[14-Oct-2019 05:09:57 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 06:35:34 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 06:39:18 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 07:10:22 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 07:18:16 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 07:34:25 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 07:47:37 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 07:50:19 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 07:50:20 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:24:03 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 11:24:03 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:24:05 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:25:23 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:35:21 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 11:35:21 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:38:24 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 11:38:24 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:38:24 America/New_York] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 119
+[14-Oct-2019 11:38:24 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 121
+[14-Oct-2019 11:38:24 America/New_York] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pctrloij/public_html/togdev/app/home/service/app/DbConfig.php on line 14
+[14-Oct-2019 11:41:45 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 11:41:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:154
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php(57): app\UserRegistration->saveToDb('1')
+#1 /home/pctrloij/public_html/togdev/app/home/service/register.php(36): app\UserRegistration->processRequest('1')
+#2 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 154
+[14-Oct-2019 11:48:45 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 11:48:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:154
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php(57): app\UserRegistration->saveToDb('1')
+#1 /home/pctrloij/public_html/togdev/app/home/service/register.php(36): app\UserRegistration->processRequest('1')
+#2 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 154
+[14-Oct-2019 12:15:39 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 12:15:39 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:154
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php(57): app\UserRegistration->saveToDb('1')
+#1 /home/pctrloij/public_html/togdev/app/home/service/register.php(36): app\UserRegistration->processRequest('1')
+#2 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 154
+[14-Oct-2019 16:37:24 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 16:48:30 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 16:53:17 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 17:12:42 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 17:33:01 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 17:41:13 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 17:52:48 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 18:21:39 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 19:18:17 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 19:25:17 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[14-Oct-2019 19:36:22 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 04:37:29 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 04:44:01 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 05:23:03 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 05:33:29 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 05:37:42 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[15-Oct-2019 05:42:56 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 01:41:18 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 03:25:45 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 03:33:59 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 03:43:05 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:12:52 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:12:52 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function app\started() in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:63
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/register.php(37): app\UserRegistration->processRequest('1')
+#1 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 63
+[16-Oct-2019 06:17:55 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:17:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function app\started() in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:60
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/register.php(37): app\UserRegistration->processRequest('1')
+#1 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 60
+[16-Oct-2019 06:20:28 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:20:28 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function app\started() in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:60
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/register.php(37): app\UserRegistration->processRequest('1')
+#1 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 60
+[16-Oct-2019 06:22:22 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function app\started() in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php:60
+Stack trace:
+#0 /home/pctrloij/public_html/togdev/app/home/service/register.php(39): app\UserRegistration->processRequest('1')
+#1 {main}
+  thrown in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 60
+[16-Oct-2019 06:23:50 America/New_York] PHP Warning:  require(../mailer.php): failed to open stream: No such file or directory in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 5
+[16-Oct-2019 06:23:50 America/New_York] PHP Fatal error:  require(): Failed opening required '../mailer.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pctrloij/public_html/togdev/app/home/service/app/UserRegistration.php on line 5
+[16-Oct-2019 06:29:06 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:29:06 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 06:34:49 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:34:49 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 06:39:55 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:39:55 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 06:43:09 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:43:09 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 06:51:46 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 06:51:46 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 07:07:26 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 07:13:35 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[16-Oct-2019 07:29:18 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 07:31:29 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[16-Oct-2019 10:20:28 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[17-Oct-2019 14:48:13 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[17-Oct-2019 14:50:24 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[17-Oct-2019 14:50:40 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[17-Oct-2019 14:55:03 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[17-Oct-2019 14:56:11 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[20-Oct-2019 07:35:27 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[22-Oct-2019 11:15:42 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[22-Oct-2019 11:15:42 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[22-Oct-2019 11:17:16 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[22-Oct-2019 11:17:16 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[23-Oct-2019 12:29:06 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[23-Oct-2019 12:39:37 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[23-Oct-2019 12:39:37 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[23-Oct-2019 20:56:07 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[31-Oct-2019 10:26:39 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[02-Nov-2019 14:03:16 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[07-Nov-2019 12:52:35 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[07-Nov-2019 13:47:05 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:12:35 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:20:01 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:27:26 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:33:57 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:39:24 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:40:57 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 09:45:49 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 10:31:35 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 10:34:37 America/New_York] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/pctrloij/public_html/togdev/app/home/service/tractor_clusters.php on line 26
+[10-Nov-2019 10:41:44 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 10:50:17 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 10:55:07 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[10-Nov-2019 11:16:07 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 03:19:32 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 05:41:04 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:03:25 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:04:58 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 06:24:13 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:24:51 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 06:32:40 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:34:02 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:34:02 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 06:37:39 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:45:52 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:46:51 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 06:52:14 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:52:29 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 06:58:48 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 06:59:00 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 07:01:41 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[11-Nov-2019 07:01:47 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/PHPMailer-master/PHPMailerAutoload.php on line 45
+[11-Nov-2019 07:03:20 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15
+[12-Nov-2019 05:11:15 America/New_York] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pctrloij/public_html/togdev/app/home/service/autoload.php on line 15

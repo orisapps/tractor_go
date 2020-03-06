@@ -1,0 +1,139 @@
+<div class="row">
+    <button class="form-control input-lg btn-success back-button pull-left"
+            name="home_signup" ng-click="back('property-type')"><span class="lnr lnr-chevron-left"></span> Back
+    </button>
+
+    <div ng-hide="loaded"><span class="lnr lnr-sync pull-right">&nbsp;<span style="font-family: 'Rubik', sans-serif">Loading</span></span></div>
+
+
+    <div class="home_centralise">
+        <div class="text-center home_mgr_wrap"><span
+                class="home_tagline">Tractor Operation</span></div>
+        <div class="details_wrap">
+            <div class="form_container_main">
+
+                <div class="view" style="margin-top: 0 !important;">
+                    <div class="service_designer_segment_main">
+                        <div class="mgr_segment_title text-center">
+                            <h5>Select the tractor operation(s) you need [{{data.services.length}}] </h5>
+                            <input type="hidden" name="" value="{{data.services.length}}">
+                        </div>
+                        <div class="designer_controls text-center">
+                            <div class="add_item_btn manipulators" ng-click="addNewService()">
+                                ADD
+                            </div>
+                            <div class="sub_item_btn manipulators" ng-click="removeService()">
+                                REMOVE
+                            </div>
+                            <div class="reset_item_btn manipulators" ng-click="resetServices()">
+                                RESET
+                            </div>
+                        </div>
+                        <div id="service_error" class="error_panel">
+                            <div class="alert alert-danger alert-dismissable">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                Sorry, you can't add any more operations!
+                            </div>
+                        </div>
+
+                        <div class="selector-wrap-default" ng-repeat="service in data.services">
+                            <hr>
+
+                            <div class="category_label">Type of Operation</div>
+                            <div class="quantity_label">Units</div>
+
+                            <select ng-change="onServiceChange(service, '{{service.data.name}}', 'services')"
+                                    ng-model="service.data" name="service_item_{{service.data.len}}"
+                                    class="form-control input-md service_item minimal"
+                                    required="required"
+                                    ng-options="option as option.name for option in service.availableServices track by option.name">
+                            </select>
+
+                            <select ng-model="service.data.quantity" name="service_item_no_{{service.data.len}}"
+                                    class="form-control input-md service_item_no minimal"
+                                    required="required">
+                                <option value="default" disabled>Qty</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+
+                            <div class="plan_label">Type of Land</div>
+                            <select ng-model="service.data.plan"
+                                    name="service_plan_no_1" id="service_plan_no_{{service.data.len}}"
+                                    class="form-control input-md service_item_no service_plan_offset minimal"
+                                    required="required"
+                                    ng-options="option as option.plan_name for option in service.data.plans track by option.plan_name">
+                            </select>
+
+                            <!--<div id="insurance_box_container_service" class="insurance_box_container">
+                                <div class="checkbox">
+                                    <label for="insurance_check_box_service_{{service.data.len}}">
+                                        <input type="checkbox" name="insurance_check_box_service_{{service.data.len}}"
+                                               id="insurance_check_box_service_{{service.data.len}}"
+                                               ng-model="service.data.insurance" ng-init="service.data.insurance=true"
+                                               ng-disabled="service.data.insurance">
+                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                        Add Insurance (N1500)
+                                    </label>
+                                </div>
+                            </div> -->
+
+                            <div class="service_description" ng-if="service.data.plan">
+                                <h5>Description - {{service.data.name}} ({{service.data.plan.plan_name}})</h5>
+                                <ul style="list-style: square;"
+                                    ng-repeat="breakdown in service.data.plan.plan_breakdown">
+                                    <li><strong>Land description:</strong> {{breakdown.activity}}</li>
+                                    <li><strong>Unit Price:</strong> N{{breakdown.unit_price}}</li>
+                                </ul>
+                                <ul style="list-style: square;">
+                                    <li><strong>Total:</strong> N{{service.data.insurance?
+                                        service.data.plan.total_price * service.data.quantity :
+                                        service.data.plan.total_price * service.data.quantity}}
+                                        ({{service.data.insurance ? 'with insurance' : 'without insurance'}})
+                                    </li>
+                                    <li><strong>Cycle:</strong> {{service.data.plan.cycle}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_btns_wrap">
+            <div class="home_btns_bottom text-center">
+                <input class="form-control input-lg btn-success"
+                       name="home_signup"
+                       ng-click="next('order-summary'); calculateOrderSummary();"
+                       value="CONTINUE >>"
+                       type="button"/>
+            </div>
+
+            <div class="copyright_home text-center">
+                <span>&copy; 2019 TOG Services Limited</span><br>
+                <a href="#">Privacy</a> | <a
+                    href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var current = 1;
+
+    $('form#house_profile').on('change', '.service_item_no', function (e) {
+        $(e.target).next('.service_item').removeAttr('disabled');
+    });
+
+    $(".error_panel").fadeOut();
+
+</script>
